@@ -1,0 +1,12 @@
+Interface Segregation Principle - No class should be forced to implement interfaces or methods that it will not use.
+Clients should not be forced to depend on interfaces they do not use. Instead of one fat interface, create smaller, role-specific interfaces so that implementing classes only need to provide methods that are relevant to them.
+
+Why ISP Matters
+1.Decoupling: Reduces the impact of changes; clients aren’t affected by unrelated interface changes.
+2.Cohesion: Each interface represents a specific role or capability.
+3.Flexibility: Classes can implement only the interfaces they require.
+4.Testability: Smaller interfaces simplify unit testing of both interfaces and implementations.
+
+When Not to Use ISP
+Over-Segmentation: Fragmenting interfaces too much can cause management overhead.
+YAGNI: Don’t split interfaces prematurely before clear separation of concerns emerges.
