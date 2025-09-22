@@ -1,0 +1,17 @@
+Summary of SOLID Principles for JavaScript Low-Level Design
+Applying SOLID principles—Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion—yields modular, maintainable, and scalable JavaScript code.
+
+Single Responsibility Principle (SRP)
+A class or module should have one, and only one, reason to change. For example, separate UserRepository (data persistence) from ActivityLogger (logging) and compose them in UserService.
+
+Open/Closed Principle (OCP)
+Modules should be open for extension but closed for modification. Use abstractions (e.g., strategy pattern) so PaymentProcessor can handle new payment types without altering existing code.
+
+Liskov Substitution Principle (LSP)
+Subtypes must be substitutable for their base types without altering program correctness. Favor composition or independent implementations (e.g., Shape interface with separate Rectangle and Square) over unsafe subclassing.
+
+Interface Segregation Principle (ISP)
+Clients should not be forced to depend on interfaces they do not use. Break fat interfaces into focused ones (e.g., separate Printer, Scanner, and Fax interfaces), so classes implement only needed methods.
+
+Dependency Inversion Principle (DIP)
+High-level modules should depend on abstractions, not concrete implementations. Define a Database abstraction, implement MySQLDatabase and MongoDatabase, and inject them into UserService rather than instantiating directly.
