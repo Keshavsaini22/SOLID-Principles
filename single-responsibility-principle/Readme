@@ -1,0 +1,11 @@
+Single Responsibility Principle (SRP) - Each module, class, or function should have one—and only one—reason to change. This ensures easier maintenance, clearer code, and better testability.
+
+The Single Responsibility Principle states that a component should have only one responsibility or job. If a class or function takes on multiple responsibilities, changes in one aspect can inadvertently affect another, leading to fragile, hard-to-maintain code.
+
+Why SRP Matters:
+1.Maintainability: Isolated responsibilities mean you can update one behavior without risk to others.
+2.Testability: Small, focused units are easier to write unit tests for.
+3.Readability: A developer reading a class that does one thing can immediately understand its purpose.
+4.Reusability: A narrowly focused module can often be reused in different contexts.
+
+
