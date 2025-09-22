@@ -1,0 +1,18 @@
+DIP - This principle holds that high-level modules, i.e., the modules that contain strategic decisions and high-level directives, should not depend on low-level modules, which are the modules that contain detailed and low-level logic.
+
+The Dependency Inversion Principle consists of two key rules:
+High-level modules (business logic) should not depend on low-level modules (utility classes); both should depend on abstractions (interfaces or abstract classes).
+Abstractions should not depend on details; details (concrete implementations) should depend on abstractions.
+
+Why DIP Matters:
+Flexibility: Swap implementations without modifying high-level code.
+Testability: Mock or stub abstractions in unit tests.
+Decoupling: Reduces coupling between modules, making the system easier to evolve.
+Maintainability: Changes in low-level details don’t ripple upward.
+
+Practical Steps to Apply DIP:
+Identify Dependencies: Spot where high-level modules directly instantiate or import concrete classes.
+Define Abstractions: Create interfaces or abstract base classes for these dependencies.
+Refactor to Injection: Pass implementations into constructors or setters (Dependency Injection).
+Implement Concrete Modules: Have concrete classes implement the abstraction.
+Use Test Doubles: Inject mock or stub abstractions during testing instead of real implementations.
