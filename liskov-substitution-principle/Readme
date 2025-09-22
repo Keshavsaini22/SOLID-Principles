@@ -1,0 +1,20 @@
+The Liskov substitution principle states that "objects of a superclass should be replaceable by objects of a subclass without affecting the correctness of the program".
+In other words, wherever you use a parent class or interface, you should be able to substitute a child class without unexpected behavior.
+The Liskov Substitution Principle states that if S is a subtype of T, then objects of type T may be replaced with objects of type S without affecting the desirable properties of the program
+
+Why LSP Matters
+Reliability: Ensures that extensions do not break existing code.
+Polymorphism: Allows true interchangeable use of subclasses.
+Maintainability: Prevents hidden coupling and unexpected side effects when using derived classes.
+Design Clarity: Keeps inheritance hierarchies logical and consistent.
+
+When Not to Use LSP
+Inappropriate Inheritance: Avoid “is-a” relationships that don’t truly hold (e.g., a Duck subclass that cannot quack).
+Overfitting Hierarchies: Don’t force classes into a hierarchy when composition would be more flexible.
+
+Applying LSP in Practice
+Validate Contracts: Ensure subclass methods honor the base class’s preconditions and postconditions.
+Prefer Composition: Use “has-a” over “is-a” when inheritance leads to contract violations.
+Write Interface Tests: Exercise both base and derived classes against the same test suite.
+Document Behavior: Clearly specify expectations in base classes or interfaces.
+
