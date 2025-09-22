@@ -1,0 +1,17 @@
+O&C P- Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+
+The Open/Closed Principle dictates that once a module is complete and tested, you shouldn’t have to modify it to add new features. Instead, you extend its behavior via abstraction (e.g., inheritance, interfaces, or composition).
+
+Why OCP Matters:
+1.Stability: Existing code remains unchanged and trusted.
+2.Flexibility: New functionality is added by extending, not modifying.
+3.Reduced Regression: Less risk of breaking existing features.
+4.Scalability: Systems can grow more gracefully as requirements evolve.
+
+
+Practical Steps to Apply OCP-
+Identify Variations: Determine where behavior might change or grow.
+Use Abstractions: Define interfaces or base classes for variable behavior.
+Leverage Composition/Inheritance: Inject or subclass concrete implementations.
+Write to Interfaces: Depend on abstractions rather than concrete classes.
+Test Extensions Independently: New strategies can be tested without touching existing code.
