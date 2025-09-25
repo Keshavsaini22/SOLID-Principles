@@ -1,0 +1,14 @@
+Composition and inheritance are two fundamental approaches to code reuse and object design. Inheritance establishes an "is-a" relationship through class hierarchies, while composition builds objects by combining behaviors through "has-a" relationships. Composition is generally more flexible and preferred for complex systems.
+
+
+What Is Composition?
+Composition is a design principle where complex functionality is constructed by combining smaller, reusable components (“has-a” relationships) rather than relying on inheritance. Each component encapsulates a specific concern and can be mixed and matched to form richer behaviors.
+
+Key Benefits of Composition
+Flexibility: You can change or extend parts without rewriting whole hierarchies.
+Decoupling: Components interact through well-defined interfaces or method calls.
+Reusability: Individual components can be reused across different contexts.
+
+
+
+
