@@ -1,0 +1,21 @@
+Composition is a special type of association that signifies strong ownership between objects. The “whole” class is fully responsible for creating, managing, and destroying the “part” objects. In fact, the parts cannot exist without the whole.
+
+Key Characteristics of Composition:
+1.Represents a strong “has-a” relationship.
+2.The whole owns the part and controls its lifecycle.
+3.When the whole is destroyed, the parts are also destroyed.
+4.The parts are not shared with any other object.
+5.The part has no independent meaning or identity outside the whole
+
+
+Composition is a preferred alternative to inheritance when building flexible systems.
+“Favor composition over inheritance.” — GoF Design Principle
+
+
+| Feature       | Association      | Aggregation                | Composition                        |
+| ------------- | ---------------- | -------------------------- | ---------------------------------- |
+| Ownership     | ❌ None           | ❌ Weak (shared reference)  | ✅ Strong (owns the part)           |
+| Lifecycle tie | ❌ Independent    | ❌ Independent              | ✅ Dependent — part dies with whole |
+| Multiplicity  | Flexible         | Whole can group many parts | Whole composed of parts            |
+| Reusability   | High             | Moderate                   | Low — parts not reused             |
+| Example       | Student ↔ Course | Department → Professor     | House → Room                       |

@@ -1,0 +1,11 @@
+Association represents a relationship between two classes where one object uses, communicates with, or references another.
+This relationship answers the question:
+“Does one object need to know about the existence of another object to perform its responsibilities?”
+
+Key Characteristics of Association:
+1.Association reflects a "has-a" or "uses-a" relationship.
+2.Associated objects are loosely coupled and can exist independently of one another.
+3.The association can be unidirectional or bidirectional, and can follow different multiplicity patterns (1-to-1, 1-to-many, etc.).
+
+
+![alt text](image.png)

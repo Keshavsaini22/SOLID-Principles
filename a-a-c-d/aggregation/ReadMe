@@ -1,0 +1,16 @@
+It’s a specialized, stronger form of association that models a "whole-part" relationship.
+Aggregation represents a "has-a" relationship between two classes, where one class (the whole) groups or organizes other classes (the parts), but does not control their lifecycle.
+
+Key Characteristics of Aggregation:
+1.The whole and the part are logically connected.
+2.The part can exist independently of the whole.
+3.The whole does not own the part.
+4.The part can be shared among multiple wholes.
+5.Both the whole and the part can be created and destroyed independently.
+
+![alt text](image.png)
+
+
+Key Difference
+Association → Just a connection (no ownership).
+Aggregation → Whole–Part (weak ownership, but parts are still independent).
